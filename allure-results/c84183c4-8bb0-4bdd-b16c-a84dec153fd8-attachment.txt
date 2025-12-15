@@ -1,0 +1,6 @@
+Alert message is : Sample alert
+Dialog type is : alert
+pop up message is : Are you sure?
+Dialog type is : confirm
+prompt pop up message is : What is your tool of choice?
+Dialog type is : prompt

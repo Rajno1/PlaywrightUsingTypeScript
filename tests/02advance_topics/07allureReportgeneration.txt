@@ -1,0 +1,76 @@
+Allure Report with Playwright [Screenshots, Videos & Traces]
+
+Step1: Install Playwright Allure Reporter using below command
+
+npm install --save-dev allure-playwright
+
+Step2: Install Allure command line using below lines 
+
+    npm install -g --save-dev allure-commandline    or     npm install -D allure-commandline (Recommended)
+
+{*** NOTE: in this line you are installing the package globally (-g) by using npm but some times OS will not allow global installation 
+that time use the command : 
+" ***   npm install --save-dev allure-commandline (or)  npm install -D allure-commandline   ** " to do local installaion 
+both commands are same -D is the short form of --save-dev
+
+
+*** Playwright recommends using local installation inside your project *** 
+
+if you really want to do global installaion use the following command
+
+    sudo npm install -g allure-commandline
+ 
+    and enter you MAC password 
+}
+
+
+Step3: Add below config in playwright.config.js file.
+
+reporter:[
+
+['html'],
+
+['allure-playwright']
+
+],
+
+Step4: Run Playwright tests.
+
+npx playwright test
+
+Step5: Generate Allure Report
+
+npx allure serve allure-results
+
+or
+
+npx allure generate allure-results --clean
+Step 6: use below line to open Allure report 
+npx allure open
+
+
+STEP 1: Uninstall Allure-related npm packages
+
+Run below comman to Remove allure-playwright
+
+npm uninstall allure-playwright
+
+
+STEP 2: Remove allure-commandline using below line of command
+
+npm uninstall allure-commandline
+
+STEP 3: Optional Remove any old reporter packages if installed using below command
+
+npm uninstall @playwright/test/reporter-allure
+
+STEP 4: Delete Allure Results Folder
+Inside your project folder (PlaywrightPractice), delete:
+allure-results
+allure-report
+.allure (if present)
+Run this in terminal:
+
+rm -rf allure-results allure-report .allure
+
+Now your project is fully cleaned of Allure.

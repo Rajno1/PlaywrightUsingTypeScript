@@ -1,0 +1,6 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="12.045663">
+<testsuite name="03FrameworkHelper/01datadrivenfromenvfile.spec.ts" timestamp="2025-12-13T00:25:17.240Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.387" errors="0">
+<testcase name="Data Driven in playwright" classname="03FrameworkHelper/01datadrivenfromenvfile.spec.ts" time="8.387">
+</testcase>
+</testsuite>
+</testsuites>
