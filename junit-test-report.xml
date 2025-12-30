@@ -1,6 +1,114 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="12.045663">
-<testsuite name="03FrameworkHelper/01datadrivenfromenvfile.spec.ts" timestamp="2025-12-13T00:25:17.240Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.387" errors="0">
-<testcase name="Data Driven in playwright" classname="03FrameworkHelper/01datadrivenfromenvfile.spec.ts" time="8.387">
+<testsuites id="" name="" tests="12" failures="0" skipped="0" errors="0" time="5.214497000000001">
+<testsuite name="03FrameworkHelper/readExcel.spec.ts" timestamp="2025-12-30T14:07:21.709Z" hostname="chromium" tests="6" failures="0" skipped="0" time="0.215" errors="0">
+<testcase name="json data from excel for john" classname="03FrameworkHelper/readExcel.spec.ts" time="0.023">
+<system-out>
+<![CDATA[username is john
+lastname is white
+username is jwhite
+password is JohnWhite
+]]>
+</system-out>
+</testcase>
+<testcase name="json data from excel for teda" classname="03FrameworkHelper/readExcel.spec.ts" time="0.032">
+<system-out>
+<![CDATA[username is teda
+lastname is moon
+username is tmoom
+password is TedaMoon
+]]>
+</system-out>
+</testcase>
+<testcase name="json data from excel for James" classname="03FrameworkHelper/readExcel.spec.ts" time="0.002">
+<system-out>
+<![CDATA[username is James
+lastname is Brown
+username is Jbrown
+password is JamesBrown
+]]>
+</system-out>
+</testcase>
+<testcase name="csv data of john" classname="03FrameworkHelper/readExcel.spec.ts" time="0.118">
+<system-out>
+<![CDATA[firsname is john
+last is white
+username is jwhite
+password is JohnWhite
+]]>
+</system-out>
+</testcase>
+<testcase name="csv data of teda" classname="03FrameworkHelper/readExcel.spec.ts" time="0.036">
+<system-out>
+<![CDATA[firsname is teda
+last is moon
+username is tmoom
+password is TedaMoon
+]]>
+</system-out>
+</testcase>
+<testcase name="csv data of James" classname="03FrameworkHelper/readExcel.spec.ts" time="0.004">
+<system-out>
+<![CDATA[firsname is James
+last is Brown
+username is Jbrown
+password is JamesBrown
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="03FrameworkHelper/readExcel.spec.ts" timestamp="2025-12-30T14:07:21.709Z" hostname="Google Chrome" tests="6" failures="0" skipped="0" time="0.049" errors="0">
+<testcase name="json data from excel for john" classname="03FrameworkHelper/readExcel.spec.ts" time="0.013">
+<system-out>
+<![CDATA[username is john
+lastname is white
+username is jwhite
+password is JohnWhite
+]]>
+</system-out>
+</testcase>
+<testcase name="json data from excel for teda" classname="03FrameworkHelper/readExcel.spec.ts" time="0.02">
+<system-out>
+<![CDATA[username is teda
+lastname is moon
+username is tmoom
+password is TedaMoon
+]]>
+</system-out>
+</testcase>
+<testcase name="json data from excel for James" classname="03FrameworkHelper/readExcel.spec.ts" time="0.007">
+<system-out>
+<![CDATA[username is James
+lastname is Brown
+username is Jbrown
+password is JamesBrown
+]]>
+</system-out>
+</testcase>
+<testcase name="csv data of john" classname="03FrameworkHelper/readExcel.spec.ts" time="0.003">
+<system-out>
+<![CDATA[firsname is john
+last is white
+username is jwhite
+password is JohnWhite
+]]>
+</system-out>
+</testcase>
+<testcase name="csv data of teda" classname="03FrameworkHelper/readExcel.spec.ts" time="0.002">
+<system-out>
+<![CDATA[firsname is teda
+last is moon
+username is tmoom
+password is TedaMoon
+]]>
+</system-out>
+</testcase>
+<testcase name="csv data of James" classname="03FrameworkHelper/readExcel.spec.ts" time="0.004">
+<system-out>
+<![CDATA[firsname is James
+last is Brown
+username is Jbrown
+password is JamesBrown
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>

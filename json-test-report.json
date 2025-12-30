@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "/Users/rajasekhar/PlayWright Project/PlaywrightPractice/playwright.config.ts",
-    "rootDir": "/Users/rajasekhar/PlayWright Project/PlaywrightPractice/tests",
+    "configFile": "/Users/rajasekhar/Library/Mobile Documents/com~apple~CloudDocs/Projects/PlayWright Project/Playwright/playwright.config.ts",
+    "rootDir": "/Users/rajasekhar/Library/Mobile Documents/com~apple~CloudDocs/Projects/PlayWright Project/Playwright/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 2
     },
     "preserveOutput": "always",
     "reporter": [
@@ -20,7 +20,7 @@
         null
       ],
       [
-        "/Users/rajasekhar/PlayWright Project/PlaywrightPractice/node_modules/allure-playwright/dist/cjs/index.js",
+        "/Users/rajasekhar/Library/Mobile Documents/com~apple~CloudDocs/Projects/PlayWright Project/Playwright/node_modules/allure-playwright/dist/cjs/index.js",
         null
       ],
       [
@@ -43,15 +43,15 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "/Users/rajasekhar/PlayWright Project/PlaywrightPractice/test-results",
+        "outputDir": "/Users/rajasekhar/Library/Mobile Documents/com~apple~CloudDocs/Projects/PlayWright Project/Playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "/Users/rajasekhar/PlayWright Project/PlaywrightPractice/tests",
+        "testDir": "/Users/rajasekhar/Library/Mobile Documents/com~apple~CloudDocs/Projects/PlayWright Project/Playwright/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -59,15 +59,15 @@
         "timeout": 120000
       },
       {
-        "outputDir": "/Users/rajasekhar/PlayWright Project/PlaywrightPractice/test-results",
+        "outputDir": "/Users/rajasekhar/Library/Mobile Documents/com~apple~CloudDocs/Projects/PlayWright Project/Playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "Google Chrome",
         "name": "Google Chrome",
-        "testDir": "/Users/rajasekhar/PlayWright Project/PlaywrightPractice/tests",
+        "testDir": "/Users/rajasekhar/Library/Mobile Documents/com~apple~CloudDocs/Projects/PlayWright Project/Playwright/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -78,20 +78,20 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 1,
+    "workers": 2,
     "webServer": null
   },
   "suites": [
     {
-      "title": "03FrameworkHelper/01datadrivenfromenvfile.spec.ts",
-      "file": "03FrameworkHelper/01datadrivenfromenvfile.spec.ts",
+      "title": "03FrameworkHelper/readExcel.spec.ts",
+      "file": "03FrameworkHelper/readExcel.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Data Driven in playwright",
+          "title": "json data from excel for john",
           "ok": true,
           "tags": [],
           "tests": [
@@ -106,18 +106,25 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 8387,
+                  "duration": 23,
                   "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "steps": [
+                  "stdout": [
                     {
-                      "title": "Reading data from env file",
-                      "duration": 6370
+                      "text": "username is john\n"
+                    },
+                    {
+                      "text": "lastname is white\n"
+                    },
+                    {
+                      "text": "username is jwhite\n"
+                    },
+                    {
+                      "text": "password is JohnWhite\n"
                     }
                   ],
-                  "startTime": "2025-12-13T00:25:18.275Z",
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-30T14:07:24.061Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -125,19 +132,536 @@
               "status": "expected"
             }
           ],
-          "id": "99ec1540aca39c7acd74-2af67d01df571a0f8f3c",
-          "file": "03FrameworkHelper/01datadrivenfromenvfile.spec.ts",
-          "line": 13,
-          "column": 5
+          "id": "e10665a7a0212550efb5-6dbe925e208b0e92f7a4",
+          "file": "03FrameworkHelper/readExcel.spec.ts",
+          "line": 25,
+          "column": 9
+        },
+        {
+          "title": "json data from excel for teda",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 32,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "username is teda\n"
+                    },
+                    {
+                      "text": "lastname is moon\n"
+                    },
+                    {
+                      "text": "username is tmoom\n"
+                    },
+                    {
+                      "text": "password is TedaMoon\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-30T14:07:24.115Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e10665a7a0212550efb5-ca99cd7ce8beb37f0a61",
+          "file": "03FrameworkHelper/readExcel.spec.ts",
+          "line": 25,
+          "column": 9
+        },
+        {
+          "title": "json data from excel for James",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "username is James\n"
+                    },
+                    {
+                      "text": "lastname is Brown\n"
+                    },
+                    {
+                      "text": "username is Jbrown\n"
+                    },
+                    {
+                      "text": "password is JamesBrown\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-30T14:07:24.222Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e10665a7a0212550efb5-07a63ff7f51c9b6a6adb",
+          "file": "03FrameworkHelper/readExcel.spec.ts",
+          "line": 25,
+          "column": 9
+        },
+        {
+          "title": "csv data of john",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 118,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "firsname is john\n"
+                    },
+                    {
+                      "text": "last is white\n"
+                    },
+                    {
+                      "text": "username is jwhite\n"
+                    },
+                    {
+                      "text": "password is JohnWhite\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-30T14:07:24.224Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e10665a7a0212550efb5-fa9ce187915dc93b46e9",
+          "file": "03FrameworkHelper/readExcel.spec.ts",
+          "line": 44,
+          "column": 9
+        },
+        {
+          "title": "csv data of teda",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 36,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "firsname is teda\n"
+                    },
+                    {
+                      "text": "last is moon\n"
+                    },
+                    {
+                      "text": "username is tmoom\n"
+                    },
+                    {
+                      "text": "password is TedaMoon\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-30T14:07:24.291Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e10665a7a0212550efb5-e5c19f93a80ab8b22b60",
+          "file": "03FrameworkHelper/readExcel.spec.ts",
+          "line": 44,
+          "column": 9
+        },
+        {
+          "title": "csv data of James",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "firsname is James\n"
+                    },
+                    {
+                      "text": "last is Brown\n"
+                    },
+                    {
+                      "text": "username is Jbrown\n"
+                    },
+                    {
+                      "text": "password is JamesBrown\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-30T14:07:24.393Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e10665a7a0212550efb5-b2e7fcb2ff563c6a353b",
+          "file": "03FrameworkHelper/readExcel.spec.ts",
+          "line": 44,
+          "column": 9
+        },
+        {
+          "title": "json data from excel for john",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 13,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "username is john\n"
+                    },
+                    {
+                      "text": "lastname is white\n"
+                    },
+                    {
+                      "text": "username is jwhite\n"
+                    },
+                    {
+                      "text": "password is JohnWhite\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-30T14:07:26.341Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e10665a7a0212550efb5-d40c4a62aea43c2ef153",
+          "file": "03FrameworkHelper/readExcel.spec.ts",
+          "line": 25,
+          "column": 9
+        },
+        {
+          "title": "json data from excel for teda",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "username is teda\n"
+                    },
+                    {
+                      "text": "lastname is moon\n"
+                    },
+                    {
+                      "text": "username is tmoom\n"
+                    },
+                    {
+                      "text": "password is TedaMoon\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-30T14:07:26.519Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e10665a7a0212550efb5-7e26f1cfd06f6a8472c5",
+          "file": "03FrameworkHelper/readExcel.spec.ts",
+          "line": 25,
+          "column": 9
+        },
+        {
+          "title": "json data from excel for James",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 7,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "username is James\n"
+                    },
+                    {
+                      "text": "lastname is Brown\n"
+                    },
+                    {
+                      "text": "username is Jbrown\n"
+                    },
+                    {
+                      "text": "password is JamesBrown\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-30T14:07:26.441Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e10665a7a0212550efb5-b33b501d84bbea7d8dc8",
+          "file": "03FrameworkHelper/readExcel.spec.ts",
+          "line": 25,
+          "column": 9
+        },
+        {
+          "title": "csv data of john",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "firsname is john\n"
+                    },
+                    {
+                      "text": "last is white\n"
+                    },
+                    {
+                      "text": "username is jwhite\n"
+                    },
+                    {
+                      "text": "password is JohnWhite\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-30T14:07:26.498Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e10665a7a0212550efb5-59bf7e6173e2a59a9229",
+          "file": "03FrameworkHelper/readExcel.spec.ts",
+          "line": 44,
+          "column": 9
+        },
+        {
+          "title": "csv data of teda",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "firsname is teda\n"
+                    },
+                    {
+                      "text": "last is moon\n"
+                    },
+                    {
+                      "text": "username is tmoom\n"
+                    },
+                    {
+                      "text": "password is TedaMoon\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-30T14:07:26.533Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e10665a7a0212550efb5-6d0860e4d12d57344742",
+          "file": "03FrameworkHelper/readExcel.spec.ts",
+          "line": 44,
+          "column": 9
+        },
+        {
+          "title": "csv data of James",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "firsname is James\n"
+                    },
+                    {
+                      "text": "last is Brown\n"
+                    },
+                    {
+                      "text": "username is Jbrown\n"
+                    },
+                    {
+                      "text": "password is JamesBrown\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-30T14:07:26.595Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e10665a7a0212550efb5-2cb1bf45f9aaac29df0f",
+          "file": "03FrameworkHelper/readExcel.spec.ts",
+          "line": 44,
+          "column": 9
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-13T00:25:15.763Z",
-    "duration": 12045.662999999999,
-    "expected": 1,
+    "startTime": "2025-12-30T14:07:21.460Z",
+    "duration": 5214.497,
+    "expected": 12,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
