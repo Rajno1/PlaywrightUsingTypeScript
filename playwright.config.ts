@@ -13,6 +13,7 @@ dotenv.config({ path: path.resolve(__dirname, '.env') });
  */
 export default defineConfig({
   testDir: './tests',
+  // testDir: './src/test',
 
 
   /* Global Test Time out - manual set */
@@ -45,6 +46,7 @@ export default defineConfig({
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    headless:false,
     video: 'on',
     screenshot: 'only-on-failure',
     actionTimeout: 10000,

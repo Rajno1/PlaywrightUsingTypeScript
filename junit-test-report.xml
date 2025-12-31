@@ -1,112 +1,24 @@
-<testsuites id="" name="" tests="12" failures="0" skipped="0" errors="0" time="5.214497000000001">
-<testsuite name="03FrameworkHelper/readExcel.spec.ts" timestamp="2025-12-30T14:07:21.709Z" hostname="chromium" tests="6" failures="0" skipped="0" time="0.215" errors="0">
-<testcase name="json data from excel for john" classname="03FrameworkHelper/readExcel.spec.ts" time="0.023">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="6.455522">
+<testsuite name="Login.spec.ts" timestamp="2025-12-31T07:13:25.599Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.466" errors="0">
+<testcase name="Login test" classname="Login.spec.ts" time="2.466">
 <system-out>
-<![CDATA[username is john
-lastname is white
-username is jwhite
-password is JohnWhite
-]]>
-</system-out>
-</testcase>
-<testcase name="json data from excel for teda" classname="03FrameworkHelper/readExcel.spec.ts" time="0.032">
-<system-out>
-<![CDATA[username is teda
-lastname is moon
-username is tmoom
-password is TedaMoon
-]]>
-</system-out>
-</testcase>
-<testcase name="json data from excel for James" classname="03FrameworkHelper/readExcel.spec.ts" time="0.002">
-<system-out>
-<![CDATA[username is James
-lastname is Brown
-username is Jbrown
-password is JamesBrown
-]]>
-</system-out>
-</testcase>
-<testcase name="csv data of john" classname="03FrameworkHelper/readExcel.spec.ts" time="0.118">
-<system-out>
-<![CDATA[firsname is john
-last is white
-username is jwhite
-password is JohnWhite
-]]>
-</system-out>
-</testcase>
-<testcase name="csv data of teda" classname="03FrameworkHelper/readExcel.spec.ts" time="0.036">
-<system-out>
-<![CDATA[firsname is teda
-last is moon
-username is tmoom
-password is TedaMoon
-]]>
-</system-out>
-</testcase>
-<testcase name="csv data of James" classname="03FrameworkHelper/readExcel.spec.ts" time="0.004">
-<system-out>
-<![CDATA[firsname is James
-last is Brown
-username is Jbrown
-password is JamesBrown
+<![CDATA[before test -----
+ Test started 
+after test -----
+
+[[ATTACHMENT|test-results/Login-Login-test-chromium/video.webm]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="03FrameworkHelper/readExcel.spec.ts" timestamp="2025-12-30T14:07:21.709Z" hostname="Google Chrome" tests="6" failures="0" skipped="0" time="0.049" errors="0">
-<testcase name="json data from excel for john" classname="03FrameworkHelper/readExcel.spec.ts" time="0.013">
+<testsuite name="Login.spec.ts" timestamp="2025-12-31T07:13:25.599Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.591" errors="0">
+<testcase name="Login test" classname="Login.spec.ts" time="2.591">
 <system-out>
-<![CDATA[username is john
-lastname is white
-username is jwhite
-password is JohnWhite
-]]>
-</system-out>
-</testcase>
-<testcase name="json data from excel for teda" classname="03FrameworkHelper/readExcel.spec.ts" time="0.02">
-<system-out>
-<![CDATA[username is teda
-lastname is moon
-username is tmoom
-password is TedaMoon
-]]>
-</system-out>
-</testcase>
-<testcase name="json data from excel for James" classname="03FrameworkHelper/readExcel.spec.ts" time="0.007">
-<system-out>
-<![CDATA[username is James
-lastname is Brown
-username is Jbrown
-password is JamesBrown
-]]>
-</system-out>
-</testcase>
-<testcase name="csv data of john" classname="03FrameworkHelper/readExcel.spec.ts" time="0.003">
-<system-out>
-<![CDATA[firsname is john
-last is white
-username is jwhite
-password is JohnWhite
-]]>
-</system-out>
-</testcase>
-<testcase name="csv data of teda" classname="03FrameworkHelper/readExcel.spec.ts" time="0.002">
-<system-out>
-<![CDATA[firsname is teda
-last is moon
-username is tmoom
-password is TedaMoon
-]]>
-</system-out>
-</testcase>
-<testcase name="csv data of James" classname="03FrameworkHelper/readExcel.spec.ts" time="0.004">
-<system-out>
-<![CDATA[firsname is James
-last is Brown
-username is Jbrown
-password is JamesBrown
+<![CDATA[before test -----
+ Test started 
+after test -----
+
+[[ATTACHMENT|test-results/Login-Login-test-Google-Chrome/video.webm]]
 ]]>
 </system-out>
 </testcase>
