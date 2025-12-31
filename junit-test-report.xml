@@ -1,21 +1,11 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="6.455522">
-<testsuite name="Login.spec.ts" timestamp="2025-12-31T07:13:25.599Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.466" errors="0">
-<testcase name="Login test" classname="Login.spec.ts" time="2.466">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="4.413291999999999">
+<testsuite name="Login.spec.ts" timestamp="2025-12-31T08:14:10.742Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="1.512" errors="0">
+<testcase name="Login test" classname="Login.spec.ts" time="1.512">
 <system-out>
 <![CDATA[before test -----
- Test started 
-after test -----
-
-[[ATTACHMENT|test-results/Login-Login-test-chromium/video.webm]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="Login.spec.ts" timestamp="2025-12-31T07:13:25.599Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.591" errors="0">
-<testcase name="Login test" classname="Login.spec.ts" time="2.591">
-<system-out>
-<![CDATA[before test -----
- Test started 
+This is login method
+This is home method
+This is program method 
 after test -----
 
 [[ATTACHMENT|test-results/Login-Login-test-Google-Chrome/video.webm]]

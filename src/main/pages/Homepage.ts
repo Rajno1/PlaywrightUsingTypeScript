@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test";
 
-export class Loginpage{
+export class Homepage{
 
     readonly page:Page; // class level variable of Playwright page type
 
@@ -13,13 +13,10 @@ export class Loginpage{
 
 
     // methods
-    async goToUrl(){
-        await this.page.goto(`${process.env.PG_GMS_URL}`);
-       // await this.page.goto('/');
-    }
+    
 
-    async loginMethod(){
-        console.log('This is login method');
+    async homeMethod(){
+        console.log('This is home method');
     }
 
 }

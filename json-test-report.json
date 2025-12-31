@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -47,23 +47,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
-        },
-        "id": "chromium",
-        "name": "chromium",
-        "testDir": "/Users/rajasekhar/Projects/PlayWright Project/Playwright/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 120000
-      },
-      {
-        "outputDir": "/Users/rajasekhar/Projects/PlayWright Project/Playwright/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "Google Chrome",
         "name": "Google Chrome",
@@ -99,21 +83,27 @@
               "timeout": 120000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
               "results": [
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2466,
+                  "duration": 1512,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "before test -----\n"
                     },
                     {
-                      "text": " Test started \n"
+                      "text": "This is login method\n"
+                    },
+                    {
+                      "text": "This is home method\n"
+                    },
+                    {
+                      "text": "This is program method \n"
                     },
                     {
                       "text": "after test -----\n"
@@ -121,57 +111,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-31T07:13:27.014Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/Users/rajasekhar/Projects/PlayWright Project/Playwright/test-results/Login-Login-test-chromium/video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "42af536f2c838a173cb6-94ef3b63a60540b58634",
-          "file": "Login.spec.ts",
-          "line": 5,
-          "column": 5
-        },
-        {
-          "title": "Login test",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 120000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Google Chrome",
-              "projectName": "Google Chrome",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 2591,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "before test -----\n"
-                    },
-                    {
-                      "text": " Test started \n"
-                    },
-                    {
-                      "text": "after test -----\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-12-31T07:13:27.053Z",
+                  "startTime": "2025-12-31T08:14:11.863Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -187,7 +127,7 @@
           ],
           "id": "42af536f2c838a173cb6-8206f2970a99fb7bfb57",
           "file": "Login.spec.ts",
-          "line": 5,
+          "line": 3,
           "column": 5
         }
       ]
@@ -195,9 +135,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-31T07:13:25.565Z",
-    "duration": 6455.522,
-    "expected": 2,
+    "startTime": "2025-12-31T08:14:10.680Z",
+    "duration": 4413.2919999999995,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
