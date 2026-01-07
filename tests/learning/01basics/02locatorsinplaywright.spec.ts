@@ -12,4 +12,13 @@ test('Different Types of Locators in Playwright', async ({ page }) => {
     await page.getByRole('link', { name: 'Organization Portal Login' }).click();
   });
 
+
+  /* 
+
+    id                 => tag#id value
+  class.               => tag.class value
+  attribute            => tag[attribute='value']
+  class with attribute => tag.classvalue[attribute='value']
+   */
+
 });

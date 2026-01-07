@@ -20,11 +20,18 @@
 
 //  import playwright moduel 
 import { test , expect } from '@playwright/test';
+// import file system module to read JSON file
 import fs from 'fs';
 // fs is file system inbuilt module in node.js
 
-// get JSON file path 
+//  define the path of the JSON file
+//  'testData/data.json' is the path of the JSON file
+//  'testData' is the folder name and 'data.json' is the file name
  const jsonFilePath = 'testData/data.json';
+//  read JSON file using fs module
+//  fs.readFileSync() is used to read the file synchronously
+//  'utf-8' is used to read the file in string format
+//  JSON.parse() is used to convert string data into JSON object    
  const jsonData:any = JSON.parse(fs.readFileSync(jsonFilePath,'utf-8'));
 
 for (const {username,password,email} of jsonData) {

@@ -3,7 +3,7 @@
  * Here we have 2 Assertions
  * 
  * Assertions are used to compare the actual value and expected value
- *  1.Hard Assertion - when ever test fail it wil stop the execusion immidiately
+ *  1.Hard Assertion - when ever a test fail it wil stop the execusion immidiately
  *  2.Soft Assertion - it will execute the script event though the test fails and will give final report after the execusion.
  * 
  *  1) Hard Assertions

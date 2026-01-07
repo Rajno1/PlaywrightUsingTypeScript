@@ -36,6 +36,8 @@ test('Mouse Actions', async({page})=>{
     await test.step('Doing mouse over', async()=>{
 
             await page.getByRole('link',{name:'Home'}).hover();
+            
+            await page.getByRole('link',{name:'Home'}).
 
         })
 

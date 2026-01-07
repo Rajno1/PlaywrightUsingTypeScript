@@ -77,7 +77,7 @@ type AppPages = {
   login: Loginpage;
   home: Homepage;
   programs: Programspage;
-};
+}
 
  export const test = base.extend<{saveLogs:void,pages:AppPages}>({ // saveLogs is fixture name 
 
@@ -103,4 +103,5 @@ type AppPages = {
       });
     },
  });
+ 
  export{expect} from '@playwright/test';
