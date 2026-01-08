@@ -1,14 +1,32 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="4.413291999999999">
-<testsuite name="Login.spec.ts" timestamp="2025-12-31T08:14:10.742Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="1.512" errors="0">
-<testcase name="Login test" classname="Login.spec.ts" time="1.512">
+<testsuites id="" name="" tests="5" failures="0" skipped="0" errors="0" time="1.4044609999999997">
+<testsuite name="learning/02advance_topics/06parallelexecusion.spec.ts" timestamp="2026-01-08T14:01:52.819Z" hostname="Google Chrome" tests="5" failures="0" skipped="0" time="0.039" errors="0">
+<testcase name="group 1 › Test 1" classname="learning/02advance_topics/06parallelexecusion.spec.ts" time="0.007">
 <system-out>
-<![CDATA[before test -----
-This is login method
-This is home method
-This is program method 
-after test -----
-
-[[ATTACHMENT|test-results/Login-Login-test-Google-Chrome/video.webm]]
+<![CDATA[ This is test one
+]]>
+</system-out>
+</testcase>
+<testcase name="group 1 › Test 2" classname="learning/02advance_topics/06parallelexecusion.spec.ts" time="0.002">
+<system-out>
+<![CDATA[ This is test two
+]]>
+</system-out>
+</testcase>
+<testcase name="group 1 › Test 3" classname="learning/02advance_topics/06parallelexecusion.spec.ts" time="0.004">
+<system-out>
+<![CDATA[ This is test three
+]]>
+</system-out>
+</testcase>
+<testcase name="group 1 › Test 4" classname="learning/02advance_topics/06parallelexecusion.spec.ts" time="0.023">
+<system-out>
+<![CDATA[ This is test four
+]]>
+</system-out>
+</testcase>
+<testcase name="group 1 › Test 5" classname="learning/02advance_topics/06parallelexecusion.spec.ts" time="0.003">
+<system-out>
+<![CDATA[ This is test five
 ]]>
 </system-out>
 </testcase>

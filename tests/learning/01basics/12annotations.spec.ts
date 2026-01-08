@@ -20,6 +20,7 @@
  * what is the difference b/w -g & -grep ?
  * -g is just a short form (alias) of --grep. Both do the same thing.
  * --grep filters tests by name or tag at runtime.
+ * --grep = globally search for a regular expression and print matching lines
  * 
  * at the time of code change we use 'test.only' on execusion we user -grep
  * 
