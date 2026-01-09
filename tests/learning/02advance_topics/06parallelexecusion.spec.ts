@@ -1,23 +1,24 @@
 /**
- *  we can do the parallel execusion using 
- * - through config file (its golbal configuration applicable for all tests )
- * - through test file ()
- * - command prompt
- *  through command we can use : npx playwright test {file name} --worker 2 
+ *  We can configure the paralle execusion using 
+ *  
+ * - Through config file (its golbal configuration applicable for all tests )
+ * - Through test file ( test.describe.config('mode: 'parallel'')
+ * - At browser specific 
+ * - Through command prompt at run time : npx playwright test {file name} --worker 2 
  * 
+ * Through config file: 
  * 
- * if we have parameter 'fullyParalle' set to 'true' in playwright.config.ts file playwright will 
+ * => In 'Playwright.config.ts' file if we have 'fullyParalle: true' by default playwright will 
  * run tests in parallel and we can sepecify the number of workers that we want .
  * 
- * But if fullyParalle is false , by default no of workers is 1  and test will run in serial execusion
+ * => if 'fullyParallel : false' , Playwright will run test in serial execusion 
+ * by default no of workers will be 1 
+ *  
+ * Workers concept: 1 worker = 1 browser refernce 
  * 
- * 
- * we have another concept called 'workers'
- * 
- * In parallel execusoin ONLY in parallel execusion for every process (test) it will assign one worker
+ * In paralle execusion for ever process (test) one wroker will be assign
  * if you are running 5 different test 5 differnt workers will be allowted to that 5 tests
  * 
- *  you have 6 tests and in parallel mode you haven't specified workers , then it will take 
  * the workers by default based on your tests , for 6 tests 6 workers , for 8 tests 8 workers 
  * 
  * when you run tests in serial mode one worker is enough to run all tests because tests will
@@ -25,13 +26,22 @@
  * 
  * only in paralle mode we can set workers 5 test with 3 workers also possible 
  *  
+ * if we configure execustion in test lever or at run time it will over ride the 
+ * configuration set in 'playwright.config.ts' file
+ * 
+ * Maximum number of workers:
+ * in parallel execusion let we have 5 test max use can set workder upto 5 
+ * if you set 6 it will take only 5 (because in this case Max no of test are only 5 )
+ * 
+ * 
+ * When workers is set to undefined, Playwright automatically decides the worker count based on CPU cores.
  */
 
 
 
 // in test lever configuraiton 
 
-test.describe.configure({mode:'serial'});
+//test.describe.configure({mode:'serial'});
 // test.describe.configure({mode:'parallel'});
 
 
@@ -42,7 +52,6 @@ test.describe('group 1',() => {
     test('Test 1', async ()=>{
         console.log(' This is test one')
     })
-
      test('Test 2', async ()=>{
         console.log(' This is test two')
     })

@@ -3,7 +3,7 @@
     "configFile": "/Users/rajasekhar/Projects/PlayWright Project/Playwright/playwright.config.ts",
     "rootDir": "/Users/rajasekhar/Projects/PlayWright Project/Playwright/tests",
     "forbidOnly": false,
-    "fullyParallel": false,
+    "fullyParallel": true,
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 2
     },
     "preserveOutput": "always",
     "reporter": [
@@ -47,10 +47,26 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
-        "id": "Google Chrome",
-        "name": "Google Chrome",
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/rajasekhar/Projects/PlayWright Project/Playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/rajasekhar/Projects/PlayWright Project/Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
         "testDir": "/Users/rajasekhar/Projects/PlayWright Project/Playwright/tests",
         "testIgnore": [],
         "testMatch": [
@@ -78,7 +94,7 @@
         {
           "title": "group 1",
           "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
-          "line": 29,
+          "line": 47,
           "column": 6,
           "specs": [
             {
@@ -90,23 +106,26 @@
                   "timeout": 120000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Google Chrome",
-                  "projectName": "Google Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7,
+                      "duration": 17,
                       "errors": [],
                       "stdout": [
                         {
                           "text": " This is test one\n"
+                        },
+                        {
+                          "text": "CI value: \u001b[90mundefined\u001b[39m\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-08T14:01:53.887Z",
+                      "startTime": "2026-01-08T16:41:26.494Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -114,9 +133,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "b76ac45bc4000480149f-ba4e47872a4ffe6080a1",
+              "id": "b76ac45bc4000480149f-f0779d67d63e95c6bda5",
               "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
-              "line": 31,
+              "line": 49,
               "column": 9
             },
             {
@@ -128,14 +147,14 @@
                   "timeout": 120000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Google Chrome",
-                  "projectName": "Google Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2,
+                      "duration": 25,
                       "errors": [],
                       "stdout": [
                         {
@@ -144,7 +163,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-08T14:01:53.944Z",
+                      "startTime": "2026-01-08T16:41:26.721Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -152,9 +171,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "b76ac45bc4000480149f-2f0f08230392f55b8fba",
+              "id": "b76ac45bc4000480149f-e554cc640a8e15773df9",
               "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
-              "line": 35,
+              "line": 54,
               "column": 10
             },
             {
@@ -166,14 +185,14 @@
                   "timeout": 120000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Google Chrome",
-                  "projectName": "Google Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4,
+                      "duration": 3,
                       "errors": [],
                       "stdout": [
                         {
@@ -182,7 +201,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-08T14:01:54.004Z",
+                      "startTime": "2026-01-08T16:41:26.634Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -190,9 +209,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "b76ac45bc4000480149f-cc4b406311f0947ed148",
+              "id": "b76ac45bc4000480149f-6603ed6e827edf571e47",
               "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
-              "line": 38,
+              "line": 57,
               "column": 10
             },
             {
@@ -204,14 +223,14 @@
                   "timeout": 120000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Google Chrome",
-                  "projectName": "Google Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 23,
+                      "duration": 5,
                       "errors": [],
                       "stdout": [
                         {
@@ -220,7 +239,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-08T14:01:54.055Z",
+                      "startTime": "2026-01-08T16:41:26.700Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -228,9 +247,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "b76ac45bc4000480149f-3de94db5c0bdc3bc2b41",
+              "id": "b76ac45bc4000480149f-4b121b5ed90be4c91f8b",
               "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
-              "line": 41,
+              "line": 60,
               "column": 10
             },
             {
@@ -242,14 +261,14 @@
                   "timeout": 120000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Google Chrome",
-                  "projectName": "Google Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3,
+                      "duration": 2,
                       "errors": [],
                       "stdout": [
                         {
@@ -258,7 +277,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-08T14:01:54.109Z",
+                      "startTime": "2026-01-08T16:41:26.768Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -266,9 +285,202 @@
                   "status": "expected"
                 }
               ],
-              "id": "b76ac45bc4000480149f-55ff1a096ac44c4eb2a2",
+              "id": "b76ac45bc4000480149f-62dedf94645ffcdb2de2",
               "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
-              "line": 44,
+              "line": 63,
+              "column": 10
+            },
+            {
+              "title": "Test 1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": " This is test one\n"
+                        },
+                        {
+                          "text": "CI value: \u001b[90mundefined\u001b[39m\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-08T16:41:28.154Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b76ac45bc4000480149f-a8e7a708f611f8f2dabc",
+              "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
+              "line": 49,
+              "column": 9
+            },
+            {
+              "title": "Test 2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 9,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": " This is test two\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-08T16:41:28.528Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b76ac45bc4000480149f-f0e514bcff6e46e86539",
+              "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
+              "line": 54,
+              "column": 10
+            },
+            {
+              "title": "Test 3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": " This is test three\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-08T16:41:28.504Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b76ac45bc4000480149f-b3388f0e4bf863254a00",
+              "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
+              "line": 57,
+              "column": 10
+            },
+            {
+              "title": "Test 4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": " This is test four\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-08T16:41:28.584Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b76ac45bc4000480149f-9acb9228b6a2aaf3ad8d",
+              "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
+              "line": 60,
+              "column": 10
+            },
+            {
+              "title": "Test 5",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": " This is test five\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-08T16:41:28.637Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b76ac45bc4000480149f-e7ad7350ff9c5c79c7e7",
+              "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
+              "line": 63,
               "column": 10
             }
           ]
@@ -278,9 +490,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-08T14:01:52.784Z",
-    "duration": 1404.4609999999998,
-    "expected": 5,
+    "startTime": "2026-01-08T16:41:25.119Z",
+    "duration": 3592.5969999999998,
+    "expected": 10,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

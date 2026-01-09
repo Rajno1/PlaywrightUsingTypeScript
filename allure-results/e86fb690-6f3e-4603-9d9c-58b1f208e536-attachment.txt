@@ -1,3 +1,0 @@
-username is vinuthna
-password is vinuthna@1990
-email is vinuthna@email.com

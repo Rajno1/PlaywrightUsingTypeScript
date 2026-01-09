@@ -1,5 +1,0 @@
-before test -----
-This is login method
-This is home method
-This is program method 
-after test -----

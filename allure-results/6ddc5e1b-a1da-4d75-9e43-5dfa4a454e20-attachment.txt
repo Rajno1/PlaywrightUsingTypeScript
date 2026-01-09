@@ -1,3 +1,0 @@
-username is rsekhar
-password is rsekhar@1990
-email is rsekhar@email.com

@@ -1,6 +1,0 @@
-Repository text is : PlaywrightTutorialFullCourse
-Repository text is : PostmanCollectionsByTestersTalk
-Repository text is : PlaywrightAPITestingTutorial
-Repository text is : RestAssuredAPITestingFramework
-Repository text is : PlaywrightTypeScriptTutorialFullCourse
-Repository text is : CypressTutorialFullCourse

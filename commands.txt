@@ -1,0 +1,7 @@
+node -v , will check nodejs is installed or not ,if not install nodeJS from its offitial website
+
+installing playwright in new folder after nodeJS installation => npm init playwright@latest
+check playwrigh version => npx playwright --version
+
+To run in Headed mode => npx playwright test {spec file} --headed
+
