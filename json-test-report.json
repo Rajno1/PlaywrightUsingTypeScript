@@ -3,7 +3,7 @@
     "configFile": "/Users/rajasekhar/Projects/PlayWright Project/Playwright/playwright.config.ts",
     "rootDir": "/Users/rajasekhar/Projects/PlayWright Project/Playwright/tests",
     "forbidOnly": false,
-    "fullyParallel": true,
+    "fullyParallel": false,
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
@@ -80,419 +80,112 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 2,
+    "workers": 3,
     "webServer": null
   },
   "suites": [
     {
-      "title": "learning/02advance_topics/06parallelexecusion.spec.ts",
-      "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
+      "title": "learning/02advance_topics/06crossbrowser.spec.ts",
+      "file": "learning/02advance_topics/06crossbrowser.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "group 1",
-          "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
-          "line": 47,
-          "column": 6,
-          "specs": [
+          "title": "Sample Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "Test 1",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
                 {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2170,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 17,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": " This is test one\n"
-                        },
-                        {
-                          "text": "CI value: \u001b[90mundefined\u001b[39m\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-08T16:41:26.494Z",
-                      "annotations": [],
-                      "attachments": []
+                      "text": "Sample test for cross browser testing\n"
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b76ac45bc4000480149f-f0779d67d63e95c6bda5",
-              "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
-              "line": 49,
-              "column": 9
-            },
-            {
-              "title": "Test 2",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-10T01:29:47.827Z",
                   "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "attachments": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 25,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": " This is test two\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-08T16:41:26.721Z",
-                      "annotations": [],
-                      "attachments": []
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/rajasekhar/Projects/PlayWright Project/Playwright/test-results/learning-02advance_topics-06crossbrowser-Sample-Test-chromium/video.webm"
                     }
-                  ],
-                  "status": "expected"
+                  ]
                 }
               ],
-              "id": "b76ac45bc4000480149f-e554cc640a8e15773df9",
-              "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
-              "line": 54,
-              "column": 10
-            },
-            {
-              "title": "Test 3",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 3,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": " This is test three\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-08T16:41:26.634Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b76ac45bc4000480149f-6603ed6e827edf571e47",
-              "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
-              "line": 57,
-              "column": 10
-            },
-            {
-              "title": "Test 4",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 5,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": " This is test four\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-08T16:41:26.700Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b76ac45bc4000480149f-4b121b5ed90be4c91f8b",
-              "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
-              "line": 60,
-              "column": 10
-            },
-            {
-              "title": "Test 5",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": " This is test five\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-08T16:41:26.768Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b76ac45bc4000480149f-62dedf94645ffcdb2de2",
-              "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
-              "line": 63,
-              "column": 10
-            },
-            {
-              "title": "Test 1",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 8,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": " This is test one\n"
-                        },
-                        {
-                          "text": "CI value: \u001b[90mundefined\u001b[39m\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-08T16:41:28.154Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b76ac45bc4000480149f-a8e7a708f611f8f2dabc",
-              "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
-              "line": 49,
-              "column": 9
-            },
-            {
-              "title": "Test 2",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 9,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": " This is test two\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-08T16:41:28.528Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b76ac45bc4000480149f-f0e514bcff6e46e86539",
-              "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
-              "line": 54,
-              "column": 10
-            },
-            {
-              "title": "Test 3",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 3,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": " This is test three\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-08T16:41:28.504Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b76ac45bc4000480149f-b3388f0e4bf863254a00",
-              "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
-              "line": 57,
-              "column": 10
-            },
-            {
-              "title": "Test 4",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": " This is test four\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-08T16:41:28.584Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b76ac45bc4000480149f-9acb9228b6a2aaf3ad8d",
-              "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
-              "line": 60,
-              "column": 10
-            },
-            {
-              "title": "Test 5",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 5,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": " This is test five\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-08T16:41:28.637Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b76ac45bc4000480149f-e7ad7350ff9c5c79c7e7",
-              "file": "learning/02advance_topics/06parallelexecusion.spec.ts",
-              "line": 63,
-              "column": 10
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "690ae541bd58db052f1d-7b5f2df3404285a5a44d",
+          "file": "learning/02advance_topics/06crossbrowser.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "Sample Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2140,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Sample test for cross browser testing\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-10T01:29:47.856Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/rajasekhar/Projects/PlayWright Project/Playwright/test-results/learning-02advance_topics-06crossbrowser-Sample-Test-firefox/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "690ae541bd58db052f1d-502742f3db3a68d03519",
+          "file": "learning/02advance_topics/06crossbrowser.spec.ts",
+          "line": 30,
+          "column": 13
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-08T16:41:25.119Z",
-    "duration": 3592.5969999999998,
-    "expected": 10,
+    "startTime": "2026-01-10T01:29:46.455Z",
+    "duration": 5805.808,
+    "expected": 2,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

@@ -14,12 +14,20 @@
  * => if 'fullyParallel : false' , Playwright will run test in serial execusion 
  * by default no of workers will be 1 
  *  
- * Workers concept: 1 worker = 1 browser refernce 
+ * Workers concept: 1 worker = 1 browser refernce ( NOT a Browser)
+ * 
+ * What is worker ?
+ * A worker is a Node.js process, Each worker runs tests in isolation(each test executes independently)
+ * launches its own browser 
  * 
  * In paralle execusion for ever process (test) one wroker will be assign
  * if you are running 5 different test 5 differnt workers will be allowted to that 5 tests
- * 
  * the workers by default based on your tests , for 6 tests 6 workers , for 8 tests 8 workers 
+ * 
+ * NOTE: you have 'fullyParalle:true' , workers:3 and you have only one test 
+ * now how many workders will assign ? as test is one 1 worker will assign.
+ * 
+ * 
  * 
  * when you run tests in serial mode one worker is enough to run all tests because tests will
  * execute one after another 

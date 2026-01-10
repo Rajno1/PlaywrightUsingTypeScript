@@ -1,66 +1,20 @@
-<testsuites id="" name="" tests="10" failures="0" skipped="0" errors="0" time="3.5925969999999996">
-<testsuite name="learning/02advance_topics/06parallelexecusion.spec.ts" timestamp="2026-01-08T16:41:25.158Z" hostname="chromium" tests="5" failures="0" skipped="0" time="0.052" errors="0">
-<testcase name="group 1 › Test 1" classname="learning/02advance_topics/06parallelexecusion.spec.ts" time="0.017">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="5.805808">
+<testsuite name="learning/02advance_topics/06crossbrowser.spec.ts" timestamp="2026-01-10T01:29:46.525Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.17" errors="0">
+<testcase name="Sample Test" classname="learning/02advance_topics/06crossbrowser.spec.ts" time="2.17">
 <system-out>
-<![CDATA[ This is test one
-CI value: [90mundefined[39m
-]]>
-</system-out>
-</testcase>
-<testcase name="group 1 › Test 2" classname="learning/02advance_topics/06parallelexecusion.spec.ts" time="0.025">
-<system-out>
-<![CDATA[ This is test two
-]]>
-</system-out>
-</testcase>
-<testcase name="group 1 › Test 3" classname="learning/02advance_topics/06parallelexecusion.spec.ts" time="0.003">
-<system-out>
-<![CDATA[ This is test three
-]]>
-</system-out>
-</testcase>
-<testcase name="group 1 › Test 4" classname="learning/02advance_topics/06parallelexecusion.spec.ts" time="0.005">
-<system-out>
-<![CDATA[ This is test four
-]]>
-</system-out>
-</testcase>
-<testcase name="group 1 › Test 5" classname="learning/02advance_topics/06parallelexecusion.spec.ts" time="0.002">
-<system-out>
-<![CDATA[ This is test five
+<![CDATA[Sample test for cross browser testing
+
+[[ATTACHMENT|test-results/learning-02advance_topics-06crossbrowser-Sample-Test-chromium/video.webm]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="learning/02advance_topics/06parallelexecusion.spec.ts" timestamp="2026-01-08T16:41:25.158Z" hostname="firefox" tests="5" failures="0" skipped="0" time="0.027" errors="0">
-<testcase name="group 1 › Test 1" classname="learning/02advance_topics/06parallelexecusion.spec.ts" time="0.008">
+<testsuite name="learning/02advance_topics/06crossbrowser.spec.ts" timestamp="2026-01-10T01:29:46.525Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.14" errors="0">
+<testcase name="Sample Test" classname="learning/02advance_topics/06crossbrowser.spec.ts" time="2.14">
 <system-out>
-<![CDATA[ This is test one
-CI value: [90mundefined[39m
-]]>
-</system-out>
-</testcase>
-<testcase name="group 1 › Test 2" classname="learning/02advance_topics/06parallelexecusion.spec.ts" time="0.009">
-<system-out>
-<![CDATA[ This is test two
-]]>
-</system-out>
-</testcase>
-<testcase name="group 1 › Test 3" classname="learning/02advance_topics/06parallelexecusion.spec.ts" time="0.003">
-<system-out>
-<![CDATA[ This is test three
-]]>
-</system-out>
-</testcase>
-<testcase name="group 1 › Test 4" classname="learning/02advance_topics/06parallelexecusion.spec.ts" time="0.002">
-<system-out>
-<![CDATA[ This is test four
-]]>
-</system-out>
-</testcase>
-<testcase name="group 1 › Test 5" classname="learning/02advance_topics/06parallelexecusion.spec.ts" time="0.005">
-<system-out>
-<![CDATA[ This is test five
+<![CDATA[Sample test for cross browser testing
+
+[[ATTACHMENT|test-results/learning-02advance_topics-06crossbrowser-Sample-Test-firefox/video.webm]]
 ]]>
 </system-out>
 </testcase>
